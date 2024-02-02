@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/Properties.uss?fileID=7433441132597879392&amp;guid=ef888b482f987fc43be1fe6c4d889ca9&amp;type=3#Properties" />
+    <ui:VisualElement style="flex-grow: 0;">
+        <ui:VisualElement style="height: 40px; flex-grow: 0; flex-shrink: 0; flex-direction: row;">
+            <ui:Label text="Properties" display-tooltip-when-elided="true" tooltip="Elements which are changable when making cards" class="main-title" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 5px;">
+            <ui:Button text="Add Property" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddPropertyButton" />
+            <ui:Button text="Remove Property" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RemovePropertyButton" />
+        </ui:VisualElement>
+        <ui:ListView focusable="true" name="PropertyListView" style="flex-direction: row; flex-wrap: wrap; flex-grow: 1;" />
+        <ui:VisualElement name="VisualElement" style="flex-wrap: wrap; flex-direction: row; display: none;">
+            <ui:Label text="(Int) Damage" display-tooltip-when-elided="true" class="property" style="background-color: rgb(103, 170, 199); color: rgb(0, 0, 0);" />
+            <ui:Label text="(Int) Timer" display-tooltip-when-elided="true" class="property" style="background-color: rgb(226, 178, 117); color: rgb(0, 0, 0);" />
+            <ui:Label text="(String) Name" display-tooltip-when-elided="true" class="property" />
+            <ui:Label text="(Sprite) Background" display-tooltip-when-elided="true" class="property" />
+            <ui:Label text="(Int) Health" display-tooltip-when-elided="true" class="property" style="background-color: rgb(210, 79, 97);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f99cd320563ad4d8832740dae5accc, type: 3}
+  m_Name: CardTemplateCardDataLoading
+  m_EditorClassIdentifier: 
+  m_intPropertyList:
+  - propertyLabel: Health
+    value: 0
+    style:
+      backgroundColour: {r: 0.8396226, g: 0.20990565, b: 0.20990565, a: 0.74509805}
+      textColour: {r: 1, g: 1, b: 1, a: 1}
+  - propertyLabel: Damage
+    value: 0
+    style:
+      backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+      textColour: {r: 1, g: 1, b: 1, a: 1}
+  m_stringPropertyList:
+  - propertyLabel: Card Name
+    value: 
+    style:
+      backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+      textColour: {r: 1, g: 1, b: 1, a: 1}
+  m_spritePropertyList:
+  - propertyLabel: Charachter Image
+    value: {fileID: 0}
+    style:
+      backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+      textColour: {r: 1, g: 1, b: 1, a: 1}
+  m_enumPropertyList:
+  - propertyLabel: Rarity
+    value: {fileID: 11500000, guid: c3263c24d3c03bc47a0d1caad3e094c7, type: 3}
+    style:
+      backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+      textColour: {r: 1, g: 1, b: 1, a: 1}

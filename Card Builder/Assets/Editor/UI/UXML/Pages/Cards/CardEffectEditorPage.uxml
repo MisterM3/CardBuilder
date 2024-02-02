@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/EditorStyle.uss?fileID=7433441132597879392&amp;guid=8505c7b44aa5bf74d982d239910837fb&amp;type=3#EditorStyle" />
+    <ui:VisualElement name="TwoPaneReplace" style="flex-direction: row;">
+        <ui:VisualElement name="Preview" style="flex-grow: 1; height: auto;">
+            <uie:Toolbar style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; height: 40px; flex-grow: 0;">
+                <ui:Button text="Menu" display-tooltip-when-elided="true" name="MenuButton" class="toolbar-button" />
+                <ui:Button text="Save" display-tooltip-when-elided="true" name="SaveButton" class="toolbar-button" />
+                <ui:Button text="Compile" display-tooltip-when-elided="true" name="CompileButton" class="toolbar-button" />
+                <ui:Button text="Go to Property Editor" display-tooltip-when-elided="true" name="GoPropertyButton" class="toolbar-button" />
+            </uie:Toolbar>
+            <uie:Toolbar style="display: flex;">
+                <uie:ObjectField label="Card" style="flex-shrink: 1;" />
+                <uie:ObjectField label="Template" style="flex-shrink: 1;" />
+            </uie:Toolbar>
+            <ui:VisualElement name="PreviewTwoPane" style="flex-grow: 1; height: auto;">
+                <ui:VisualElement name="PreviewText" style="flex-grow: 1; height: auto; width: auto; align-items: center; justify-content: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px;" />
+                <ui:VisualElement name="Settings">
+                    <ui:Foldout text="Foldout" class="editor-foldout" style="margin-top: 1px;" />
+                    <ui:Foldout text="Foldout" class="editor-foldout" />
+                    <ui:Foldout text="Foldout" class="editor-foldout" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="NodeGraphSide" style="flex-grow: 1; border-left-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+            <uie:Toolbar style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; height: 40px; flex-grow: 0; display: none; visibility: hidden;">
+                <uie:ToolbarButton text="Button" display-tooltip-when-elided="true" class="toolbar-button" />
+                <uie:ToolbarSpacer />
+            </uie:Toolbar>
+            <ui:VisualElement name="NodeGraph" style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="width: 50px; height: 50px;">
+        <ui:VisualElement name="VerticalArrow" style="background-color: rgba(21, 255, 0, 0); width: 10px; height: 50px; top: 0; flex-shrink: 0; align-items: center;">
+            <ui:VisualElement style="flex-grow: 0; width: 4px; align-items: center; left: 0; background-color: rgb(21, 255, 0); height: 40px; top: 8px; bottom: 0;">
+                <ui:VisualElement style="background-image: url(&apos;project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=1169890249420208065&amp;guid=4fd2ed39f1e421f48a9101ab9fcc48b4&amp;type=3#arrow-up&apos;); width: 20px; height: 20px; -unity-background-image-tint-color: rgb(21, 255, 0); top: -14px; left: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="HorizontalArrow" style="background-color: rgba(255, 0, 0, 0); width: 50px; height: 10px; top: -10px; flex-shrink: 0; flex-direction: row;">
+            <ui:VisualElement style="flex-grow: 0; width: 40px; align-items: center; left: 2px; background-color: rgb(255, 0, 0); height: 4px; top: 3px; bottom: 0;">
+                <ui:VisualElement style="background-image: url(&apos;project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=-1087164816274819069&amp;guid=4fd2ed39f1e421f48a9101ab9fcc48b4&amp;type=3#arrow-right@2x&apos;); width: 20px; height: 20px; -unity-background-image-tint-color: rgb(255, 0, 0); top: -8px; left: 24px; flex-shrink: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BothArrow" style="width: 20px; height: 20px; position: relative; top: -30px; left: auto; flex-shrink: 0; background-color: rgb(0, 137, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

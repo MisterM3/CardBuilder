@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <uie:PropertyField style="height: 100%;">
+        <ui:Label tabindex="-1" text="Add/Remove Visuals On Card" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 12px; -unity-font-style: bold; -unity-text-align: middle-center; margin-top: 0; margin-right: 5px; margin-bottom: 0; margin-left: 5px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
+        <uie:PropertyField style="flex-direction: row; align-items: flex-start; justify-content: space-around; align-self: auto; margin-top: 0; border-left-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); height: 100%; border-bottom-width: 2px;">
+            <uie:PropertyField style="flex-grow: 1; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-width: 0; width: 50%; margin-top: 5px; height: 109px;">
+                <ui:Label tabindex="-1" text="Adding" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                <ui:Button text="Add Image" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddImageButton" style="flex-grow: 1; flex-shrink: 1; width: auto; height: 40px; margin-top: 6px; margin-right: 6px; margin-bottom: 6px; margin-left: 6px;" />
+                <ui:Button text="Add Text" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="AddTextButton" style="flex-shrink: 1; margin-top: 6px; margin-right: 6px; margin-bottom: 6px; margin-left: 6px; height: 40px; flex-grow: 1;" />
+            </uie:PropertyField>
+            <ui:VisualElement style="flex-grow: 1; height: 100%; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 0; border-right-width: 1px; border-bottom-width: 0; border-left-width: 1px;" />
+            <uie:PropertyField style="flex-grow: 1; border-left-color: rgb(113, 113, 113); border-right-color: rgb(113, 113, 113); border-top-color: rgb(113, 113, 113); border-bottom-color: rgb(113, 113, 113); border-left-width: 0; height: 109px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; width: 50%; margin-top: 5px;">
+                <ui:Label tabindex="-1" text="Removing" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                <ui:Button text="Remove Element" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RemoveElementButton" style="height: 40px; margin-top: 6px; margin-right: 6px; margin-bottom: 6px; margin-left: 6px; flex-grow: 1; flex-shrink: 1;" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 40px; margin-top: 6px; margin-right: 6px; margin-bottom: 6px; margin-left: 6px; flex-grow: 1; flex-shrink: 1; visibility: hidden; display: flex;" />
+            </uie:PropertyField>
+        </uie:PropertyField>
+    </uie:PropertyField>
+</ui:UXML>

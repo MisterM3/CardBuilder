@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/Properties.uss?fileID=7433441132597879392&amp;guid=ef888b482f987fc43be1fe6c4d889ca9&amp;type=3#Properties" />
+    <ui:VisualElement name="PreviewText" style="flex-grow: 1; height: auto; width: auto; align-items: flex-start; justify-content: flex-start; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 0; flex-direction: column; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; border-left-width: 0; border-right-width: 0; border-top-width: 0; margin-right: 10px;">
+        <ui:VisualElement style="align-items: stretch; align-self: center; width: 90%; flex-grow: 0;">
+            <ui:Label text="Hierarchy" display-tooltip-when-elided="true" tooltip="How the card is layered" class="main-title" style="align-items: auto; margin-bottom: 10px; padding-bottom: 10px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; width: 100%; height: 100%;">
+            <ui:TreeView view-data-key="unity-tree-view" focusable="true" name="TreeView" style="flex-shrink: 1; flex-direction: column; width: 100%; align-items: flex-start; min-width: 200px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="TreeElement" style="flex-grow: 1; display: none;">
+            <ui:VisualElement style="margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; flex-grow: 1;">
+                <ui:Foldout text="Card Root" style="visibility: visible; overflow: hidden; height: 114px; flex-grow: 1;">
+                    <ui:Foldout text="Card Image" style="margin-left: 15px; flex-grow: 1;">
+                        <ui:Foldout text="Health">
+                            <ui:Foldout text="Health Int&#10;" style="flex-grow: 1;" />
+                        </ui:Foldout>
+                        <ui:Foldout text="Damage" />
+                        <ui:Foldout text="Card Effect Image">
+                            <ui:Foldout text="Card Effect" style="margin-left: 15px;">
+                                <ui:Foldout text="Timer" />
+                                <ui:Foldout text="Name" />
+                            </ui:Foldout>
+                        </ui:Foldout>
+                    </ui:Foldout>
+                </ui:Foldout>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

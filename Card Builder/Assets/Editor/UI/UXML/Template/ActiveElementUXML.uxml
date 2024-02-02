@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/Properties.uss?fileID=7433441132597879392&amp;guid=ef888b482f987fc43be1fe6c4d889ca9&amp;type=3#Properties" />
+    <ui:VisualElement name="ActiveElement" style="flex-grow: 1;">
+        <ui:VisualElement style="height: 40px; flex-grow: 0; flex-shrink: 0;">
+            <ui:Label text="Active Element Settings" display-tooltip-when-elided="true" tooltip="Change settings on the active element or property" class="main-title" style="font-size: 12px; white-space: nowrap;" />
+        </ui:VisualElement>
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="ActiveElementList" />
+        <ui:VisualElement name="SettingsView" style="margin-left: 5px; margin-right: 5px; margin-top: 0; margin-bottom: 5px; display: none;">
+            <ui:TextField picking-mode="Ignore" label="Name" value="filler text" text="filler text" name="Name" />
+            <ui:EnumField label="Property Type" type="
+            s.PropertyType, Assembly-CSharp-Editor" name="PropertyTypeField" />
+            <uie:ColorField label="Background Colour" value="RGBA(0.000, 1.000, 1.000, 1.000)" name="BackgroundColourField" />
+            <uie:ColorField label="Text Colour" value="RGBA(0.000, 1.000, 1.000, 1.000)" name="TextColourField" />
+            <ui:Toggle label="Connect To Enum" />
+            <ui:Toggle label="Is Property" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

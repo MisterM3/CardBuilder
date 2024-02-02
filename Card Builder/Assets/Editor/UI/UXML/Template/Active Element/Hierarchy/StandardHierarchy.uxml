@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Foldout text="Main">
+        <ui:TextField picking-mode="Ignore" label="Name" value="filler text" name="Name" />
+        <ui:EnumField label="Type of Element" type="UnityEngine.TextAlignment, UnityEngine.TextRenderingModule" value="Center" name="VisualElementType" style="display: none; visibility: hidden;" />
+    </ui:Foldout>
+</ui:UXML>

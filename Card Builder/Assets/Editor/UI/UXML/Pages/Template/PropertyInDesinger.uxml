@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/UI/USS/Properties.uss?fileID=7433441132597879392&amp;guid=ef888b482f987fc43be1fe6c4d889ca9&amp;type=3#Properties" />
+    <ui:Label text="(Int) Damage" display-tooltip-when-elided="true" name="Label" class="property" style="background-color: rgb(103, 170, 199); color: rgb(0, 0, 0); min-width: auto; min-height: 30px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+</ui:UXML>

@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/UI/USS/StartButtons.uss?fileID=7433441132597879392&amp;guid=333fa640615cf0e409810481b626a2e3&amp;type=3#StartButtons" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center; margin-top: 50px;">
+        <ui:VisualElement>
+            <ui:Label text="To make a card you need a template" display-tooltip-when-elided="true" style="margin-bottom: 10px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:Button text="Start From Template" display-tooltip-when-elided="true" name="StartTemplateButton" tooltip="Use A Template to make a new card" class="start-button" style="flex-wrap: nowrap; white-space: normal;" />
+            <ui:Button text="Make Variant of Card" display-tooltip-when-elided="true" name="StartVariatyButton" tooltip="Make a Variaty of an already existing card, connecting them" class="start-button" />
+        </ui:VisualElement>
+        <ui:VisualElement>
+            <ui:Button text="Back" display-tooltip-when-elided="true" name="BackButton" class="small-button medium-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

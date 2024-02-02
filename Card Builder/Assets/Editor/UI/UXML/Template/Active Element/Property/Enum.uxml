@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Foldout text="Enum">
+        <uie:ObjectField label="Current Enum" name="CurrentEnumField" allow-scene-objects="false" type="UnityEngine.Object, UnityEngine.CoreModule" style="visibility: visible;" />
+        <uie:PropertyField name="ChooseEnumField" style="flex-direction: row; justify-content: space-around; align-items: stretch; height: 50px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; display: flex;">
+            <ui:Button text="Change Enum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChangeEnumButton" style="align-items: stretch; flex-grow: 1; flex-shrink: 1;" />
+        </uie:PropertyField>
+    </ui:Foldout>
+</ui:UXML>

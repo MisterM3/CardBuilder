@@ -1,0 +1,331 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501d43c44138fdd4c9cd419a6802bfb0, type: 3}
+  m_Name: PrototypeCard
+  m_EditorClassIdentifier: 
+  templateName: PrototypeCard
+  cardDataSO: {fileID: 11400000, guid: 71f91873e30461b478a1a05fc29c26e5, type: 2}
+  hierarchyData:
+    hierachyDataList:
+    - hierarchyData:
+        nameData: ROOT
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList: []
+          font: {fileID: 0}
+          fontSize: 12
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 0
+        visualImage:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          spriteList: []
+        visualElementType: 0
+      parentID: -1
+    - hierarchyData:
+        nameData: Background
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList: []
+          font: {fileID: 0}
+          fontSize: 12
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 0
+        visualImage:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: Rarity
+            propertyType: 3
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 11500000, guid: c3263c24d3c03bc47a0d1caad3e094c7,
+              type: 3}
+          size: {x: 187.2, y: 224}
+          spriteList:
+          - {fileID: 21300000, guid: 80e504f6abb147846b96c03488205805, type: 3}
+          - {fileID: 21300000, guid: 550da456bb9028f4096ee8b5922aee52, type: 3}
+          - {fileID: 21300000, guid: 6873d06ef60e46844804a1581c2d159f, type: 3}
+          - {fileID: 21300000, guid: 02f4e50d82367b945b6903f8df5439ca, type: 3}
+        visualElementType: 0
+      parentID: 0
+    - hierarchyData:
+        nameData: Name Card
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList: []
+          font: {fileID: 0}
+          fontSize: 12
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 0
+        visualImage:
+          nameObject: 
+          position: {x: 9.75, y: 44}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 143.2, y: 49.04}
+          spriteList:
+          - {fileID: 21300000, guid: 997cd24d081bcc44a838e7afdf258f67, type: 3}
+        visualElementType: 0
+      parentID: 1
+    - hierarchyData:
+        nameData: Name
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 4}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList:
+          - Name
+          font: {fileID: 12800000, guid: 97aa4b3066975d34e805d9ab569212a8, type: 3}
+          fontSize: 20
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 4
+        visualImage:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          spriteList: []
+        visualElementType: 1
+      parentID: 2
+    - hierarchyData:
+        nameData: Border Image
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList: []
+          font: {fileID: 0}
+          fontSize: 12
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 0
+        visualImage:
+          nameObject: 
+          position: {x: 13, y: -19}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 112, y: 112}
+          spriteList:
+          - {fileID: 21300000, guid: 3e163e88a1d4d7f479b85e4fe07e48a1, type: 3}
+        visualElementType: 0
+      parentID: 1
+    - hierarchyData:
+        nameData: BackgroundImage
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList: []
+          font: {fileID: 0}
+          fontSize: 12
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 0
+        visualImage:
+          nameObject: 
+          position: {x: 1, y: 0}
+          connectedInfo:
+            nameProperty: Charachter Image
+            propertyType: 2
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          spriteList:
+          - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+        visualElementType: 0
+      parentID: 4
+    - hierarchyData:
+        nameData: DamageImage
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList: []
+          font: {fileID: 0}
+          fontSize: 12
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 0
+        visualImage:
+          nameObject: 
+          position: {x: 63, y: 79}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 40, y: 40}
+          spriteList:
+          - {fileID: 21300000, guid: d3061d87a4e6f444bb14603073240bb6, type: 3}
+        visualElementType: 0
+      parentID: 1
+    - hierarchyData:
+        nameData: DamageText
+        visualText:
+          nameObject: 
+          position: {x: 0, y: -6}
+          connectedInfo:
+            nameProperty: Damage
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList:
+          - 2
+          font: {fileID: 12800000, guid: 97aa4b3066975d34e805d9ab569212a8, type: 3}
+          fontSize: 32
+          textColour: {r: 0.3962264, g: 0.0504628, b: 0.09132804, a: 1}
+          textAnchor: 4
+        visualImage:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          spriteList: []
+        visualElementType: 1
+      parentID: 6
+    - hierarchyData:
+        nameData: HealthImage
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList: []
+          font: {fileID: 0}
+          fontSize: 12
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 0
+        visualImage:
+          nameObject: 
+          position: {x: -43, y: 75}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 30.4, y: 46.2}
+          spriteList:
+          - {fileID: 21300000, guid: 6a538585e54be83418de8d0ca96bd949, type: 3}
+        visualElementType: 0
+      parentID: 1
+    - hierarchyData:
+        nameData: HealthText
+        visualText:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: Health
+            propertyType: 0
+            backgroundColour: {r: 0.754717, g: 0.23851903, b: 0.23851903, a: 1}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          textList:
+          - 1
+          font: {fileID: 12800000, guid: 97aa4b3066975d34e805d9ab569212a8, type: 3}
+          fontSize: 32
+          textColour: {r: 0, g: 0, b: 0, a: 1}
+          textAnchor: 4
+        visualImage:
+          nameObject: 
+          position: {x: 0, y: 0}
+          connectedInfo:
+            nameProperty: 
+            propertyType: 0
+            backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+            textColour: {r: 1, g: 1, b: 1, a: 1}
+            enumScript: {fileID: 0}
+          size: {x: 100, y: 100}
+          spriteList: []
+        visualElementType: 1
+      parentID: 8

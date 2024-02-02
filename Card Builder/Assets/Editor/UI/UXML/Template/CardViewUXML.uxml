@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="CardViewerVE" style="flex-grow: 1; background-image: none; background-color: rgba(154, 121, 121, 0); -unity-background-scale-mode: scale-to-fit; height: 100px; width: 100%; margin-left: 0; margin-right: 0; margin-top: 10%; margin-bottom: 10%; padding-left: 0; -unity-background-image-tint-color: rgb(255, 255, 255); position: relative; top: 0; left: 0; justify-content: center; align-items: center;" />
+</ui:UXML>

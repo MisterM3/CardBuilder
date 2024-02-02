@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Foldout text="Text" value="true" name="Foldout" style="padding-right: 5px;">
+        <ui:RadioButtonGroup label="Connection" value="2" name="RadioButtonGroup" style="margin-bottom: 5px;">
+            <ui:RadioButton label="Don&apos;t Connect" name="NoConnect" value="true" />
+            <ui:RadioButton label="Connect To Property" name="ConnectProperties" />
+        </ui:RadioButtonGroup>
+        <uie:PropertyField name="PF_NoConnect" style="display: flex;">
+            <ui:TextField picking-mode="Ignore" label="Text " value="filler text" name="TF_BaseText" />
+        </uie:PropertyField>
+        <uie:PropertyField name="PF_ConnectProperty" style="display: flex;">
+            <ui:DropdownField label="Connected Property" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="PropertyDropDown" />
+        </uie:PropertyField>
+        <uie:PropertyField name="PF_EnumConnected" style="display: flex;">
+            <uie:PropertyField style="border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(118, 118, 118); border-right-color: rgb(118, 118, 118); border-top-color: rgb(118, 118, 118); border-bottom-color: rgb(118, 118, 118); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 5px;">
+                <ui:TextField picking-mode="Ignore" label="Enum Name" value="filler text" readonly="true" name="TF_EnumName" />
+                <ui:VisualElement style="flex-grow: 1; background-color: rgb(118, 118, 118); height: 3px; margin-top: 5px;" />
+                <uie:PropertyField name="Enums" />
+            </uie:PropertyField>
+        </uie:PropertyField>
+    </ui:Foldout>
+</ui:UXML>

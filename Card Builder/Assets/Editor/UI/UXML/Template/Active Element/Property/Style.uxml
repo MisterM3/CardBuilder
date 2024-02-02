@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Foldout text="Styling" tooltip="How the property will look in the card editor">
+        <ui:VisualElement style="flex-grow: 1;">
+            <uie:ColorField label="Background Colour" value="#383838FF" name="BackgroundColourField" />
+            <uie:ColorField label="Text Colour" value="#989898FF" name="TextColourField" style="display: none; visibility: hidden;" />
+        </ui:VisualElement>
+    </ui:Foldout>
+</ui:UXML>

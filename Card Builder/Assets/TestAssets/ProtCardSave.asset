@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3df846c056385479e68916a710a375, type: 3}
+  m_Name: ProtCardSave
+  m_EditorClassIdentifier: 
+  nameCard: ProtCardData
+  TemplatePrefab: {fileID: 4926482453887852841, guid: 46ac20fec691502488c1fa31946cbbc1,
+    type: 3}
+  cardDataSO: {fileID: 11400000, guid: 71f91873e30461b478a1a05fc29c26e5, type: 2}
+  card: {fileID: 11400000, guid: 9592b4e060ab5ec40b6c3a3919498387, type: 2}

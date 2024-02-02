@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Foldout text="Text Style">
+        <uie:ObjectField label="Font Type" type="TMPro.TMP_FontAsset, Unity.TextMeshPro" tooltip="Font type if empty it will take the root font" name="FontField" style="-unity-font: url(&apos;project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=4fd2ed39f1e421f48a9101ab9fcc48b4&amp;type=3#NotInter-Regular&apos;); -unity-font-definition: initial; font-size: 12px;" />
+        <ui:FloatField label="Text Size" value="42,2" name="FontSize" />
+        <uie:ColorField label="Text Colour" value="#000000FF" name="TextColour" />
+        <ui:EnumField label="Horizontal Alignment" type="CardBuilder.EAlign, Assembly-CSharp-Editor" name="HorAlign" />
+        <ui:EnumField label="Vertical Alignment" type="CardBuilder.EAlignHor, Assembly-CSharp-Editor" name="VerAlign" include-obsolete-values="false" />
+    </ui:Foldout>
+</ui:UXML>

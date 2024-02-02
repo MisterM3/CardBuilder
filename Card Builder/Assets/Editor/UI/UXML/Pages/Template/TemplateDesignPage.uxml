@@ -1,0 +1,80 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/Properties.uss?fileID=7433441132597879392&amp;guid=ef888b482f987fc43be1fe6c4d889ca9&amp;type=3#Properties" />
+    <Style src="project://database/Assets/Editor/UI/USS/EditorStyle.uss?fileID=7433441132597879392&amp;guid=8505c7b44aa5bf74d982d239910837fb&amp;type=3#EditorStyle" />
+    <ui:VisualElement name="TwoPaneReplace" style="flex-direction: row;">
+        <ui:VisualElement name="Preview" style="flex-grow: 1; height: auto; width: 350px; flex-shrink: 1; min-width: 350px;">
+            <uie:Toolbar style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; height: 40px; flex-grow: 0;">
+                <ui:Button text="Menu" display-tooltip-when-elided="true" name="MenuButton" class="toolbar-button" />
+                <ui:Button text="Save" display-tooltip-when-elided="true" name="SaveButton" class="toolbar-button" />
+                <ui:Button text="Compile" display-tooltip-when-elided="true" name="CompileButton" class="toolbar-button" style="display: none; visibility: hidden;" />
+                <ui:Button text="Save and Make Card" display-tooltip-when-elided="true" name="MakeCardWithTemplate" class="toolbar-button" style="display: none; visibility: hidden;" />
+            </uie:Toolbar>
+            <uie:Toolbar style="display: flex;">
+                <ui:TextField picking-mode="Ignore" label="Name Template" value="filler text" name="NameTemplate" readonly="true" />
+            </uie:Toolbar>
+            <ui:VisualElement name="PreviewTwoPane" style="flex-grow: 1; height: auto; align-items: stretch;">
+                <ui:VisualElement name="ReplaceHierarchyList" style="flex-grow: 1;" />
+                <ui:VisualElement name="ActiveElement" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightTwoPaneReplace" style="flex-direction: row;">
+            <ui:VisualElement name="NodeGraphSide" style="flex-grow: 1; border-left-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 100px; background-image: none;">
+                <uie:Toolbar style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; height: 40px; flex-grow: 0; display: none; visibility: hidden;">
+                    <uie:ToolbarButton text="Button" display-tooltip-when-elided="true" class="toolbar-button" />
+                    <uie:ToolbarSpacer />
+                </uie:Toolbar>
+                <ui:VisualElement name="CardPreview" style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); flex-grow: 1; background-image: none;">
+                    <ui:VisualElement name="Testr" style="flex-grow: 1; background-image: none; background-color: rgba(154, 121, 121, 0); -unity-background-scale-mode: scale-to-fit; height: 100px; width: 100%; margin-left: 0; margin-right: 0; margin-top: 10%; margin-bottom: 10%; padding-left: 0; -unity-background-image-tint-color: rgb(255, 255, 255); position: relative; top: 0; left: 0; justify-content: center; align-items: center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="RightSideVerticalTwoPane" style="flex-grow: 1; width: 190px; -unity-slice-left: 0; background-color: rgba(0, 0, 0, 0); border-left-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); min-width: 190px;">
+                <ui:VisualElement name="PropertyListParent" style="flex-grow: 0;">
+                    <ui:VisualElement style="flex-grow: 1; display: none;">
+                        <ui:VisualElement style="height: 40px; flex-grow: 0; flex-shrink: 0; flex-direction: row;">
+                            <ui:Label text="Properties" display-tooltip-when-elided="true" tooltip="Elements which are changable when making cards" class="main-title" />
+                            <ui:Button text="Add Property" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddPropertyButton" />
+                            <ui:Button text="Remove Property" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RemovePropertyButton" />
+                        </ui:VisualElement>
+                        <ui:ListView focusable="true" name="PropertyListView" style="flex-direction: row; flex-wrap: wrap; flex-grow: 1;" />
+                        <ui:VisualElement name="VisualElement" style="flex-wrap: wrap; flex-direction: row; display: none;">
+                            <ui:Label text="(Int) Damage" display-tooltip-when-elided="true" class="property" style="background-color: rgb(103, 170, 199); color: rgb(0, 0, 0);" />
+                            <ui:Label text="(Int) Timer" display-tooltip-when-elided="true" class="property" style="background-color: rgb(226, 178, 117); color: rgb(0, 0, 0);" />
+                            <ui:Label text="(String) Name" display-tooltip-when-elided="true" class="property" />
+                            <ui:Label text="(Sprite) Background" display-tooltip-when-elided="true" class="property" />
+                            <ui:Label text="(Int) Health" display-tooltip-when-elided="true" class="property" style="background-color: rgb(210, 79, 97);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="AddElements" style="align-items: stretch; flex-direction: column; flex-wrap: nowrap;">
+                    <ui:VisualElement tooltip="UI Elements which can be addede as visuals" style="display: none;">
+                        <ui:Label text="UI Elements" display-tooltip-when-elided="true" class="main-title" style="align-items: auto; margin-top: 10px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-direction: row; flex-wrap: wrap; min-width: auto; min-height: auto; justify-content: space-around; display: none;">
+                        <ui:VisualElement name="Int" style="align-items: center; justify-content: flex-start; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
+                            <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; background-color: rgba(132, 132, 132, 0.57); height: 75px; width: 75px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TestButton" style="flex-grow: 1; flex-shrink: 1;" />
+                            </ui:VisualElement>
+                            <ui:Label text="Text" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Sprite" style="align-items: center; justify-content: flex-start; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
+                            <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; background-color: rgba(132, 132, 132, 0.57); height: 75px; width: 75px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                                <ui:Button text="RemoveSelected" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RemoveSelectedHierarchy" style="flex-grow: 1;" />
+                            </ui:VisualElement>
+                            <ui:Label text="Image" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="CardEffect" style="align-items: center; justify-content: flex-start; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
+                            <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; background-color: rgba(132, 132, 132, 0.57); height: 75px; width: 75px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                            <ui:Label text="CardEffect" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="String" style="align-items: center; justify-content: flex-start; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
+                            <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; background-color: rgba(132, 132, 132, 0.57); height: 75px; width: 75px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TestButtonString" style="flex-grow: 1; flex-shrink: 1;" />
+                            </ui:VisualElement>
+                            <ui:Label text="Number" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

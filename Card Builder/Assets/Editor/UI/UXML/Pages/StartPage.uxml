@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/StartButtons.uss?fileID=7433441132597879392&amp;guid=333fa640615cf0e409810481b626a2e3&amp;type=3#StartButtons" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-around; height: 576px;">
+        <ui:VisualElement style="flex-grow: 0; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; height: 556px; align-items: center; justify-content: space-around;">
+            <ui:VisualElement style="margin-left: 5px; margin-right: 5px; margin-top: 20px; margin-bottom: 5px; flex-shrink: 0; justify-content: flex-end; align-items: center;">
+                <ui:Label text="Card Builder" display-tooltip-when-elided="true" style="align-items: center; justify-content: flex-end; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 46px;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 0.5; flex-direction: row;">
+                <ui:VisualElement class="button-container rightItem">
+                    <ui:Button text="New Card" display-tooltip-when-elided="true" name="NewCardButton" tooltip="Make a new card using a template." class="start-buttons start-button" />
+                    <ui:Button text="Edit Card" display-tooltip-when-elided="true" enable-rich-text="true" name="EditCardButton" tooltip="Edit an already existing card." class="start-button" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leftItem button-container">
+                    <ui:Button text="New Template" display-tooltip-when-elided="true" name="NewTemplateButton" tooltip="Create a new Template, all cards are based on a template." class="start-button" />
+                    <ui:Button text="Edit Template" display-tooltip-when-elided="true" name="EditTemplateButton" tooltip="Edit an already existing template." class="start-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; align-items: center; margin-bottom: 25px;">
+                <ui:Button text="Documentation" display-tooltip-when-elided="true" name="Documentation" view-data-key="Documentation" class="medium-button" style="visibility: hidden;" />
+                <ui:Button text="Credits" display-tooltip-when-elided="true" name="Button" class="small-button" style="visibility: hidden;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

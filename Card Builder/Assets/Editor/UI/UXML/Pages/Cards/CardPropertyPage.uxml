@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/Properties.uss?fileID=7433441132597879392&amp;guid=ef888b482f987fc43be1fe6c4d889ca9&amp;type=3#Properties" />
+    <Style src="project://database/Assets/Editor/UI/USS/EditorStyle.uss?fileID=7433441132597879392&amp;guid=8505c7b44aa5bf74d982d239910837fb&amp;type=3#EditorStyle" />
+    <ui:VisualElement name="TwoPaneReplace" style="flex-direction: row; flex-grow: 1;">
+        <ui:VisualElement name="Preview" style="flex-grow: 1; min-width: 200px;">
+            <uie:Toolbar style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; height: 40px; flex-grow: 0;">
+                <ui:Button text="Menu" display-tooltip-when-elided="true" name="MenuButton" class="toolbar-button" />
+                <ui:Button text="Save" display-tooltip-when-elided="true" name="SaveButton" class="toolbar-button" />
+                <ui:Button text="Go To Effect Page" display-tooltip-when-elided="true" name="GoEffectButton" class="toolbar-button" style="display: none;" />
+            </uie:Toolbar>
+            <uie:Toolbar name="Toolbar" style="display: flex; flex-shrink: 1; flex-grow: 1; flex-wrap: wrap; height: 80px; max-height: 60px; min-height: 20px; flex-direction: row; padding-bottom: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-left: 0;">
+                <ui:TextField picking-mode="Ignore" label="Card Name" value="filler text" name="TF_CardName" readonly="true" tooltip="Name of card (Can&apos;t be changed)" style="flex-shrink: 1; align-items: stretch; width: 100%; margin-left: 10px; padding-bottom: 2px; padding-top: 2px; max-width: 400px; margin-right: 10px;" />
+                <ui:TextField picking-mode="Ignore" label="Template Name" value="filler text" name="TF_TemplateName" readonly="true" tooltip="Name of template card is based on (Can&apos;t be changed)" style="flex-shrink: 1; align-items: stretch; align-self: auto; padding-bottom: 2px; margin-bottom: 0; visibility: visible; display: flex; overflow: visible; width: 100%; max-width: 400px; margin-left: 10px; padding-top: 2px; margin-right: 10px;" />
+            </uie:Toolbar>
+            <ui:VisualElement name="SplitPane" style="flex-grow: 1; height: auto;">
+                <ui:VisualElement name="PreviewText" style="flex-grow: 1; height: auto; width: auto; align-items: center; justify-content: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                    <ui:VisualElement name="PreviewImage" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Settings" style="display: none;">
+                    <ui:Foldout text="Settings Template/Variant" class="editor-foldout" style="margin-top: 1px;">
+                        <ui:VisualElement />
+                    </ui:Foldout>
+                    <ui:Foldout text="Foldout" class="editor-foldout" />
+                    <ui:Foldout text="Foldout" class="editor-foldout" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="NodeGraphSide" style="flex-grow: 1; border-left-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; min-width: 200px;" />
+    </ui:VisualElement>
+</ui:UXML>

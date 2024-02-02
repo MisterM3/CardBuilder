@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI/USS/CardProperties.uss?fileID=7433441132597879392&amp;guid=592256dbdf93a3f4f895d24498958130&amp;type=3#CardProperties" />
+    <Style src="project://database/Assets/USS_EnableDisable.uss?fileID=7433441132597879392&amp;guid=ee4be66671432da40b5241c4123f4586&amp;type=3#USS_EnableDisable" />
+    <uie:ObjectField label="Object Path" name="OF_SpriteProperty" class="cardProperty disabled" />
+    <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="TF_StringProperty" class="cardProperty disabled" />
+    <ui:IntegerField label="Integer Field" value="42" name="IF_IntegerProperty" class="cardProperty disabled" />
+    <ui:DropdownField label="DropDown" name="DF_EnumProperty" class="cardProperty disabled" />
+</ui:UXML>
